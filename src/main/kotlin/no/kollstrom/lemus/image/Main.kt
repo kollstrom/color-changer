@@ -1,8 +1,8 @@
 package no.kollstrom.lemus.image
 
-import no.kollstrom.lemus.image.process.saveImage
+import no.kollstrom.lemus.image.process.Processor.changeColors
 
 fun main(args: Array<String>) {
-  // TODO: Sanitize
-  saveImage(args.first(), "tzt", -1, -16777216)
+  // TODO: Sanitize args
+//  changeColors(args.first(), "tzt", t.first, t.second)
 }
