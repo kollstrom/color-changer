@@ -49,8 +49,11 @@ fun <T> List<T>.distinctCombinations(): List<Pair<T, T>> {
     this[0] to this[1],
     this[0] to this[2],
     this[0] to this[3],
+    this[1] to this[0],
     this[1] to this[2],
     this[1] to this[3],
+    this[2] to this[0],
+    this[2] to this[1],
     this[2] to this[3]
   )
 }

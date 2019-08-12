@@ -66,13 +66,16 @@ internal class ProcessingTest {
 
   @Test
   internal fun `find all distinct combinations`() {
-    assertThat(distinctCombinations(listOf("A", "B", "C", "D"))).isEqualTo(
+    assertThat(listOf("A", "B", "C", "D").distinctCombinations()).isEqualTo(
       listOf(
         A to B,
         A to C,
         A to D,
+        B to A,
         B to C,
         B to D,
+        C to A,
+        C to B,
         C to D
       )
     )
